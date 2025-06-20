@@ -3,9 +3,15 @@ This project verifies an 8-bit up-counter using SystemVerilog. The counter incre
 
 The testbench is modular and includes:
 Clock generation (clk)
+
 Reset generation (rst held high for 2 cycles)
+
 Random stimulus for exact using $urandom_range(0,1)
+
 Output comparison logic to check:
+
 If exact == 0 → out must increment
+
 If exact == 1 → out must stay constant
+
 Pass/Fail logging and waveform dump (dump.vcd)
